@@ -6,7 +6,15 @@ public class Lecture5Exercises {
      *   lecture 5 page 14
      */
     public String weakPassword(int length) {
-        return null;
+        String password = "";
+        for (int i=0; i<length; i++)
+        {
+            int randomInt = (int)Math.floor(Math.random() * (122 - 97 + 1) + 97);
+            char randomChar = (char) randomInt;
+            password += randomChar;
+
+        }
+        return password;
     }
 
     /*

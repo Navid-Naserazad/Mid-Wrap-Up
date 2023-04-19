@@ -10,10 +10,10 @@ public class Lecture6Exercises {
      *   lecture 6 page  16
      */
     public long calculateEvenSum(int[] arr) {
-        int sum = 0;
+        long sum = 0;
         for (int i=0; i<arr.length; i+=2)
         {
-            sum += arr[i];
+            sum += (long) arr[i];
         }
         return sum;
     }
